@@ -170,7 +170,7 @@ var html = '';
 var randomQuote = '';
 var randomBackground = '';
 
-// Generate a random number between 0 and quotes.length, and using it as the index, and retrieved the object:
+// Generate a random number between 0 and quotes.length, and using it as the index, and retrieve the object:
 
 function getRandomQuote() {
   var i = Math.floor(Math.random() * quotes.length);
@@ -179,12 +179,13 @@ function getRandomQuote() {
 
 
 
+
 /*
-
 RANDOM-1:
-One way to generate randomBackground, less random but we eliminate unwanted colors.
+One way to generate randomBackground, less random but we eliminate unwanted colors. Still a lot of colors.
+*/
 
-var cssColors = ["Aquamarine","Blue","BlueViolet","Brown","BurlyWood","CadetBlue","Chartreuse","Chocolate","Coral","CornflowerBlue","Crimson","Cyan","DarkBlue","DarkCyan","DarkGoldenRod","DarkGray","DarkGrey","DarkGreen","DarkKhaki","DarkMagenta","DarkOliveGreen","Darkorange","DarkOrchid","DarkRed","DarkSalmon","DarkSeaGreen","DarkSlateBlue","DarkSlateGray","DarkSlateGrey","DarkTurquoise","DeepPink","DeepSkyBlue","DimGray","DodgerBlue","FireBrick","ForestGreen","Fuchsia","Gold","GoldenRod","Grey","Green","GreenYellow","HotPink","IndianRed","Indigo","Khaki","LawnGreen","LemonChiffon","LightBlue","LightCoral","LightGreen","LightPink","LightSalmon","LightSeaGreen","LightSkyBlue","LightSlateGray","LightSlateGrey","Lime","LimeGreen","Linen","Magenta","Maroon","MediumAquaMarine","MediumBlue","MediumOrchid","MediumPurple","MediumSeaGreen","MediumSlateBlue","MediumSpringGreen","MediumTurquoise","MediumVioletRed","MidnightBlue","Navy","Olive","OliveDrab","Orange","OrangeRed","Orchid","PaleGreen","PaleTurquoise","PaleVioletRed","PeachPuff","Peru","Pink","Plum","PowderBlue","Purple","Red","RosyBrown","RoyalBlue","SaddleBrown","Salmon","SandyBrown","SeaGreen","Sienna","SkyBlue","SlateBlue","SlateGray","SlateGrey","SpringGreen","SteelBlue","Tan","Teal","Tomato","Turquoise","Violet","Yellow","YellowGreen"];
+var cssColors = ["Blue","BlueViolet","Brown","BurlyWood","CadetBlue","Chartreuse","Chocolate","Coral","CornflowerBlue","Crimson","Cyan","DarkBlue","DarkCyan","DarkGoldenRod","DarkGray","DarkGrey","DarkGreen","DarkKhaki","DarkMagenta","DarkOliveGreen","Darkorange","DarkOrchid","DarkRed","DarkSalmon","DarkSeaGreen","DarkSlateBlue","DarkSlateGray","DarkSlateGrey","DarkTurquoise","DeepPink","DeepSkyBlue","DimGray","DodgerBlue","FireBrick","ForestGreen","Fuchsia","Gold","GoldenRod","Grey","Green","GreenYellow","HotPink","IndianRed","Indigo","LawnGreen","LightCoral","LightGreen","LightPink","LightSalmon","LightSeaGreen","LightSkyBlue","LightSlateGray","LightSlateGrey","Lime","LimeGreen","Magenta","Maroon","MediumAquaMarine","MediumBlue","MediumOrchid","MediumPurple","MediumSeaGreen","MediumSlateBlue","MediumSpringGreen","MediumTurquoise","MediumVioletRed","MidnightBlue","Navy","Olive","OliveDrab","Orange","OrangeRed","Orchid","PaleVioletRed","Peru","Pink","Plum","Purple","Red","RosyBrown","RoyalBlue","SaddleBrown","Salmon","SandyBrown","SeaGreen","Sienna","SkyBlue","SlateBlue","SlateGray","SlateGrey","SpringGreen","SteelBlue","Tan","Teal","Tomato","Turquoise","Violet","Yellow","YellowGreen"];
 
 
 function getBackground() {
@@ -192,13 +193,11 @@ function getBackground() {
   return cssColors[j];
 }
 
-*/
 
 /*
 RANDOM-2:
-Or this way, more possibilies, but I have to enhance it. For example if you have #F0FFFF, then change css color (text). Or eliminate unwanted colors from the possibilities. I'll get back to
-this.
-*/
+Or this way, more possibilies, but needs a workaround in case of unwanted colors.
+
 
 function getBackground() {
   	var keys = '0123456789ABCDEF';
@@ -209,6 +208,7 @@ function getBackground() {
 	return color;
 }
 
+*/
 
 function printQuote() {
     
